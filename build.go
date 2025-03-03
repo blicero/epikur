@@ -2,7 +2,7 @@
 // -*- mode: go; coding: utf-8; -*-
 // Created on 01. 02. 2021 by Benjamin Walkenhorst
 // (c) 2021 Benjamin Walkenhorst
-// Time-stamp: <2025-02-24 19:44:49 krylon>
+// Time-stamp: <2025-03-03 19:09:43 krylon>
 
 //go:build ignore
 // +build ignore
@@ -34,7 +34,7 @@ import (
 )
 
 const (
-	appName     = "krylisp"
+	appName     = "epikur"
 	logFile     = "./dbg.build.log"
 	lintCommand = "mygolint"
 	nilaway     = "nilaway"
@@ -69,29 +69,21 @@ var candidates = map[string][]string{
 	},
 	"test": {
 		"common",
-		"parser",
-		"interpreter",
 	},
 	"vet": {
 		"common",
 		"logdomain",
-		"parser",
-		"interpreter",
 		"types",
 	},
 	"lint": {
 		"common",
 		"logdomain",
 		"types",
-		"parser",
-		"interpreter",
 	},
 	"nilaway": {
 		"common",
 		"logdomain",
 		"types",
-		"parser",
-		"interpreter",
 	},
 }
 
