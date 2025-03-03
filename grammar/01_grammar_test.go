@@ -2,7 +2,7 @@
 // -*- mode: go; coding: utf-8; -*-
 // Created on 03. 03. 2025 by Benjamin Walkenhorst
 // (c) 2025 Benjamin Walkenhorst
-// Time-stamp: <2025-03-03 20:28:16 krylon>
+// Time-stamp: <2025-03-03 20:44:26 krylon>
 
 package grammar
 
@@ -46,6 +46,11 @@ func TestPrimitive(t *testing.T) {
 			name:   "real",
 			input:  "3.141592653589793",
 			output: &Real{Val: 3.141592653589793},
+		},
+		{
+			name:   "array",
+			input:  "[1 2 3]",
+			output: &Array{Values: []Value{&Integer{Val: 1}, &Integer{Val: 2}, &Integer{Val: 3}}},
 		},
 	}
 
