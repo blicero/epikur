@@ -2,7 +2,7 @@
 // -*- mode: go; coding: utf-8; -*-
 // Created on 03. 03. 2025 by Benjamin Walkenhorst
 // (c) 2025 Benjamin Walkenhorst
-// Time-stamp: <2025-03-03 20:35:34 krylon>
+// Time-stamp: <2025-03-03 23:09:09 krylon>
 
 package grammar
 
@@ -135,3 +135,8 @@ func (a *Array) Equal(other Value) bool {
 		return false
 	}
 } // func (a *Array) Equal(other Value) bool
+
+// Map is a hash table, aka dictionary.
+// type Map struct {
+// 	Val map[Value]Value `parser:"OpenBrace @@
+// }
