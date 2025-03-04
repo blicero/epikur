@@ -2,7 +2,7 @@
 // -*- mode: go; coding: utf-8; -*-
 // Created on 03. 03. 2025 by Benjamin Walkenhorst
 // (c) 2025 Benjamin Walkenhorst
-// Time-stamp: <2025-03-03 22:54:39 krylon>
+// Time-stamp: <2025-03-04 15:47:21 krylon>
 
 package grammar
 
@@ -61,6 +61,28 @@ func TestPrimitive(t *testing.T) {
 				&Real{Val: 3.141592},
 			}},
 		},
+		{
+			name:  "pair",
+			input: `"hello": 3`,
+			output: &Pair{
+				Key: "hello",
+				Val: &Integer{Val: 3},
+			},
+		},
+		{
+			name:   "empty_map",
+			input:  "{    }",
+			output: &Map{Val: make([]*Pair, 0)},
+		},
+		// {
+		// 	name:  "map",
+		// 	input: `{"name": "Jupiter" "size": 11 "mass": 300 }`,
+		// 	output: &Map{Val: map[Value]Value{
+		// 		&String{Val: "name"}: &String{Val: "Jupiter"},
+		// 		&String{Val: "size"}: &Integer{Val: 11},
+		// 		&String{Val: "mass"}: &Integer{Val: 300},
+		// 	}},
+		// },
 	}
 
 	for _, c := range samples {

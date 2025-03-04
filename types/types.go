@@ -2,7 +2,7 @@
 // -*- mode: go; coding: utf-8; -*-
 // Created on 03. 03. 2025 by Benjamin Walkenhorst
 // (c) 2025 Benjamin Walkenhorst
-// Time-stamp: <2025-03-03 19:08:24 krylon>
+// Time-stamp: <2025-03-04 15:30:49 krylon>
 
 // Packages types provides symbolic constants to refer to the primitive
 // types of the Epikur programming language.
@@ -18,6 +18,7 @@ const (
 	Integer
 	Real
 	String
+	Pair
 	Array
 	Map
 	Object
