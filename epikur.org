@@ -1,5 +1,5 @@
 # -*- mode: org; fill-column: 78; -*-
-# Time-stamp: <2025-03-04 16:13:50 krylon>
+# Time-stamp: <2025-03-04 17:10:23 krylon>
 #
 #+TAGS: internals(i) bug(b) feature(f)
 #+TAGS: design(d), meditation(m)
@@ -17,14 +17,14 @@
   A naive attempt at creating a primitive programming language.
 ** Clocktable
    #+BEGIN: clocktable :scope file :maxlevel 202 :emphasize t
-   #+CAPTION: Clock summary at [2025-03-04 Di 16:13]
+   #+CAPTION: Clock summary at [2025-03-04 Di 17:10]
    | Headline               | Time   |        |      |
    |------------------------+--------+--------+------|
-   | *Total time*           | *4:11* |        |      |
+   | *Total time*           | *5:01* |        |      |
    |------------------------+--------+--------+------|
-   | *Epikur [0/0]*         | *4:11* |        |      |
-   | \_  /Components [0/0]/ |        | /4:11/ |      |
-   | \_    Grammar [0/0]    |        |        | 4:11 |
+   | *Epikur [0/0]*         | *5:01* |        |      |
+   | \_  /Components [0/0]/ |        | /5:01/ |      |
+   | \_    Grammar [0/0]    |        |        | 5:01 |
    #+END:
 ** Features [0/0]
    :PROPERTIES:
@@ -42,6 +42,7 @@
     :VISIBILITY: children
     :END:
     :LOGBOOK:
+    CLOCK: [2025-03-04 Di 16:20]--[2025-03-04 Di 17:10] =>  0:50
     CLOCK: [2025-03-04 Di 14:40]--[2025-03-04 Di 15:50] =>  1:10
     CLOCK: [2025-03-03 Mo 17:57]--[2025-03-03 Mo 20:58] =>  3:01
     :END:
